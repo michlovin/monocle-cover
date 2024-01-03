@@ -1,47 +1,9 @@
 import React from "react";
 import "./Cover.css"; // Import your stylesheet
 import plane from "../../assets/plane.jpg";
-import { NAV_DATA } from "../data.jsx";
+// import { NAV_DATA } from "../data.jsx";
 
-const header = ["Title", "Subtitle"];
-const navBar = NAV_DATA;
-const articleDescription = ["ArticleDescription"];
-const Footer = ["Footer"];
-
-function Header(props) {
-  return (
-    <div>
-      <h1>{props.title}</h1>
-      <h3>{props.subtitle}</h3>
-      <img src={props.image} alt={props.alt} />
-    </div>
-  );
-}
-
-function NavigationBar({ articlename, image }) {
-  return (
-    <div>
-      {articlename}
-      <img src={image} />
-    </div>
-  );
-}
-
-function ArticleDescription(props) {
-  return (
-    <div>
-      <h3>{props.articledescription}</h3>
-    </div>
-  );
-}
-
-function FooterDescription(props) {
-  return (
-    <div>
-      <h3>{props.footer}</h3>
-    </div>
-  );
-}
+// const navBar = NAV_DATA;
 
 const MagazineCover = () => {
   return (
